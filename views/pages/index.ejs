@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background-color: gray;">
+  <h1>NHL jengejä</h1>
+</div>
+
+
+
+<div class="container text-center my-3 ">
+  <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+      <div class="carousel-inner w-100" role="listbox">
+          <div class="carousel-item row no-gutters active">
+              <a href="oilers">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/oilers.jpg" style="height: 170;"></div>
+              </a>
+              <a href="bruins">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/bruins.jpg" style="height: 170;"></div>
+              </a>
+              <a href="carolina">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/carolina.png" style="height: 170;"></div>
+              </a>
+              <a href="colorado">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/colorado.png" style="height: 170;"></div>
+               </a>
+          </div>
+          <div class="carousel-item row no-gutters">
+              <a href="nashville">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/nashville.png" style="height: 170;"></div>
+              </a>
+              <a href="sanjose">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/sanjose.png" style="height: 170;"></div>
+              </a>
+              <a href="vegas">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/vegas.png" style="height: 170;"></div>
+              </a>
+              <a href="washington">
+                <div class="col-3 float-left"><img class="img-fluid" src="./images/washington.jpg" style="height: 170;"></div>
+              </a>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+</div> 
+
+
+
+<div class="container">
+  <div class="page-header">      
+  </div>
+  <p>Tällä sivulla pääset ihmettelemään seuraavien NHL-jengien päivitettyjä kokoonpanoja: Boston Bruins, Carolina Hurricanes, Colorado Avalanche, Nashville Predators, Edmonton Oilers, San Jose Sharks, Las Vegas Golden Knights ja Washington Capitals. Joukkuetta klikkaamalla pääset näkemään tämän hetkisen kokoonpanon varustettuna pelaajan pelinumerolla, pelaajan nimellä sekä pelaajan pelipaikalla. Karusellia pyörittämällä voit selata joukkueita.
+  </p>      
+       
+</div>
+
+
+<footer>
+  <%- include("../partials/footer"); %>
+</footer>
+
+</body>
+</html>
