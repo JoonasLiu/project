@@ -2,10 +2,11 @@ const request = require("request");
 var http = require('http');
 var data;
 
-var express = require("express");
+const express = require("express");
 var app = express();
 
 const ejs = require('ejs');
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 
@@ -62,4 +63,4 @@ http
     })
       
 
-  .listen(3000);
+  app.listen(port);
