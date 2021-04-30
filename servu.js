@@ -6,7 +6,7 @@ const express = require("express");
 var app = express();
 
 const ejs = require('ejs');
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 
@@ -63,4 +63,4 @@ http
     })
       
 
-  app.listen(port);
+  app.listen(PORT, () => console.log('Server running!'));
